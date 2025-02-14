@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Pharmacy Management Dashboard</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+    
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Pharmacy Management</label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+               <li><a href="user.php">User login</a></li>
+                <li><a href="ad.php">Admin login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="bg-img">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="2.avif" alt="Pharmacy Image 1" style="width:100%"; height="30%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="3.jpg" alt="Pharmacy Image 2" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="4.avif" alt="Pharmacy Image 3" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="5.webp" alt="Pharmacy Image 4" style="width:100%">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="overview-section">
+        <h2>Welcome to Our Pharmacy</h2>
+        <div class="overview-container">
+            <div class="overview-image">
+                <img src="p.avif" alt="Pharmacy Logo">
+            </div>
+            <div class="over-para">
+                <p>
+                    At our pharmacy, we are committed to providing you with the highest quality healthcare products and services. Whether you need prescription medications, over-the-counter treatments, or expert advice from our licensed pharmacists, we are here to help. We offer reliable, fast, and professional services to meet all your pharmaceutical needs.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+ <!-- Your Custom JavaScript -->
+ <script type="text/javascript" src="translate.js"></script>
+
+ <div class="scroll">
+     <div class="slides slide1">
+         <div class="heading">
+             
+             
+         </div>
+
+         <div class="container">
+             <section class="about">
+                 <div class="about-image">
+                     <img src="Cocrytsal-Pharma.jpg" alt="Pharmacy Image">
+                 </div>
+                 <div class="about-content">
+                    <h2>Scope of Pharmacy Management System</h2>
+                    A Pharmacy Management System (PMS) is a comprehensive software solution designed to streamline and automate various processes within a pharmacy, enhancing efficiency, accuracy, and customer service.
+                 </div>
+             </section>
+         </div>
+     </div>
+ </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+</body>
+</html>
